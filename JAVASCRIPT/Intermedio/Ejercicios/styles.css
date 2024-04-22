@@ -1,0 +1,44 @@
+:root {
+  --bg-color: #ccc;
+  --text-color: #444;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+h1 {
+  text-decoration: underline;
+}
+
+/* #container-1 {
+  padding: 30px;
+  background-color: #f00; */
+/* } */
+/* 
+#container-2 {
+  padding: 30px;
+  background-color: #00f;
+} */
+
+.input-prueba {
+  border: 1px solid #0006;
+  border-radius: 5px;
+  padding: 6px;
+  color: #444;
+  /* ❌ NO COLOCAR !IMPORTANT */
+  outline: none !important;
+}
+
+.seleccionado {
+  color: #777;
+  margin-top: 10px;
+  font-size: 27px;
+}
+
+.seleccionado B {
+  color: #0a0;
+}
