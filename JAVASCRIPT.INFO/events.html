@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eventos en JavaScript</title>
+  </head>
+  <body>
+    <!-- Handler establecido en el html: on<event> -->
+    <!-- Eventos en funciones -> event() -->
+      <input
+      type="button"
+      value="!Cuenta los conejos¡"
+      onclick="countRabbits()"
+    />
+    <!-- PROPIEDAD DEL DOM -->
+    <input type="button" id="elem" value="Haz click en mi" />
+    <!-- ELEMENTO THIS -->
+    <button onclick="alert(this.innerHTML)">¡Presiona este botón!</button>
+    <script src="Eventos/introduccion-de-eventos.js"></script>
+  </body>
+</html>
