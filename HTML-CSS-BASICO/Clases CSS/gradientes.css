@@ -1,0 +1,38 @@
+/* Transicipon de colores combinados */
+
+/* 
+Gradientes -> background o backgrund-image
+- linear-gradient(direccion,color1,color2);
+- radial-gradient(direccion,color1,color2);
+- conic-gradient(direccion,color1,color2);
+- transform: rotate(90deg)
+*/
+
+body {
+  background-color: red;
+  margin: 0;
+}
+
+.box {
+  width: 300px;
+  height: 400px;
+  background-color: red;
+  background: conic-gradient(transparent, #000a);
+  margin: 0;
+  border-radius: 7px;
+  margin: auto;
+  margin-top: 20px;
+  border-top: 6px solid #900;
+}
+
+img {
+  width: 300px;
+}
+
+h1 {
+  margin: 0;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-family: sans-serif;
+}

@@ -1,0 +1,18 @@
+/* Define como se posicionan y dimensionan los elementos de una página web */
+/* 
+PROPIEDADEs:
+content -> contenido de la caja
+padding -> Relleno
+border -> Línea que rodea el contenido (Estilo, grosor y el color del borde)
+margin -> Separar el elemento de otras cajas
+width -> Ancho
+height -> Alto
+*/
+
+input {
+  width: 90%;
+}
+
+form {
+  width: 300px;
+}

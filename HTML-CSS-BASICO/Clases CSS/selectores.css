@@ -1,0 +1,9 @@
+/*Selector de Clase */
+.ingrediente-faltante {
+  color: red;
+}
+
+/*Selector por Id -> único elemento*/
+#ingrediente-secreto {
+  color: blue;
+}

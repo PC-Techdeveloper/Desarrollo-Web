@@ -1,0 +1,26 @@
+/* 
+PADDING -> Relleno
+MARGIN -> Separar los elementos
+margin o padding separación total -> Toma la propiedad más grande
+SHORTHAND -> Formas cortas
+Todos los lados -> top, right, bottom, left, (Un solo valor afecta a todo -> 10px) 
+Dos valores -> 20px(arriba y abajo) 10px(derecha y izquierda)
+Estilo específicamente a ese elemento -> Dos clases
+*/
+
+body {
+  margin: 0;
+}
+.box1 {
+  background: red;
+  height: 150px;
+  width: 150px;
+  margin-bottom: 30px;
+}
+
+.box2 {
+  background: red;
+  height: 150px;
+  width: 150px;
+  margin-top: 40px;
+}

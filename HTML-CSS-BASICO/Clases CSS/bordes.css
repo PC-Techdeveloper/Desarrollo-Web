@@ -1,0 +1,57 @@
+/* 
+border-width -> Ancho del borde 
+border-style -> Estilar borde (solid, dashed, double, groove, dotted, hidden)
+border-radius -> Redondear las esquinas
+border-color -> Color del borde (transparent, none)
+border: width style color;
+
+MODIFICAR BORDES Y RADIO:
+border-direcciones-style -> Cambiar estilos en todas las direcciones
+border-top -> Borde arriba
+border-bottom -> Borde abajo
+border-left -> Borde izquierdo
+border-right -> Borde derecho
+*/
+
+body {
+  background: #000;
+}
+
+input {
+  margin: 5px;
+  padding: 6px 9px;
+  border: none;
+  border-bottom: 1px solid greenyellow;
+  background: transparent;
+  color: greenyellow;
+  outline: none;
+}
+
+/* div { */
+/* background-color: red; */
+/* width: 150px; */
+/* margin: auto; */
+/* text-align: center; */
+/* } */
+
+/* div { */
+/* Estilo de borde simplificado */
+/* border-top: 5px solid blue; */
+/* Bordes en todos los costados */
+/* border: 5px solid blue; */
+
+/* Estilando las essquinas */
+/* border-top-left-radius: 20px; */
+/* border-top-right-radius: 20px; */
+/* border-bottom-left-radius: 2px; */
+/* border-bottom-right-radius: 10px; */
+
+/* Estilando esquinas simplificado */
+/* border-radius: 10px 50px 0 4px; */
+
+/* Estilos de borde */
+/* border-bottom-width: 2px; */
+/* border-bottom-style: dashed; */
+/* border-bottom-color: yellow; */
+/* border-bottom: 2px dashed yellow; */
+/* } */

@@ -1,0 +1,19 @@
+/* TIPOGRAFÍA AVANZADA*/
+/* Nombre de la fuente, ruta de la fuente, formato y grosor de la fuente*/
+@font-face {
+  font-family: 'Ubuntu';
+  src: url(fonts/Ubuntu-Regular.ttf) format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url(fonts/Ubuntu-BoldItalic.ttf) format('truetype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url(fonts/Ubuntu-LightItalic.ttf) format('truetype');
+  font-weight: 300;
+}

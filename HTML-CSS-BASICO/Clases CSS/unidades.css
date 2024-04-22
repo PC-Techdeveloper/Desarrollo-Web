@@ -1,0 +1,62 @@
+/*
+UNIDADES DE MEDIDA:
+- px, pc, pt -> Medidas absolutas
+
+- mm (milimetros), cm (Centimetros - Impresiones), in (pulgadas) -> Medidas físicas.
+
+UNIDADES RELATIVAS -> Unidad que depende de otro valor.
+em (Vale lo mismo del font-size del elemento padre, sino lo tiene busca a otra etiqueta que tenga un font-size y multiplicarlo por el valor de em), rem (Lo mismo que el em, solo que busca al elemento raiz), % (Respecto al tamaño que lo contiene)
+
+- vw y vh -> Ancho total y alto total de los elementos (Común para hacer ventanas modales)
+
+- vamx (1vh - más grande) y vmin (1vw - más pequeño)
+
+FORMAS DE UTILIZAR LAS UNIDADES DE MEDIDA
+TIPOGRAFIA -> em, rem
+LAYOUT -> %, em, rem, vw, vh
+MISMA MEDIDA -> px
+BORDES -> px
+
+*/
+
+/* html { */
+/* Elemento raiz para rem */
+/* font-size: 16px; */
+/* } */
+
+body {
+  font-size: 40px;
+  margin: 0;
+}
+div {
+  background: #ededed;
+  padding: 20px;
+  font-family: sans-serif;
+  border-left: solid #999;
+  /* Elemento padre de em */
+  font-size: 20px;
+  width: 80vw;
+  height: 80vh;
+  margin: 0;
+  box-sizing: border-box;
+  margin: auto;
+  margin-top: 1vmin = 1vw;
+}
+
+h1 {
+  margin: 0;
+  font-size: 23px;
+}
+
+span {
+  color: #999;
+  font-size: 16px;
+  font-weight: 100;
+  font-size: 1em;
+}
+
+p {
+  color: #555;
+  /* Multiplica el em del elemento padre por este valor */
+  font-size: 1rem;
+}

@@ -1,0 +1,40 @@
+/* 
+Shorthand: DEPENDIENDO DE LA RESOLUCIÓN
+Background -> Engloba casi todas las posibilidades de background-color -> Color de fondo
+background-image -> url("...") -> link de la imagen
+background-size -> El ancho de la imagen se adapte al contenedor (En %,px,em,rem- contain (Obliga al contenedor que la imagen entre al menos una vez9. cover -> Adaptarse completamente al contenedor
+background-repeeat -> No repetir la imagen en diferentes ejes (x, y, no repeat)
+background-position -> Posicionar la imagen (center,left,right,end,top,bottom)
+background-attachment -> fixed, local, scroll, 
+
+*/
+
+body {
+  background-color: #48e;
+  margin: 0;
+  font-family: sans-serif;
+  color: white;
+}
+
+.box {
+  width: 100%;
+  height: 100px;
+  background-image: url('https://yt3.googleusercontent.com/jHpWdf9qWNdrCjxfQxCxR0aiYY9Y1IO7s6Jwlk-OgKxS8nzjEMffakE6mdOdp2u22R3130U0nQ=s900-c-k-c0x00ffffff-no-rj');
+  background-color: #6fa;
+  background-size: cover;
+  background-position: top;
+  /* En cover no se muestra la repetición */
+  /* Trabajar con el scroll vertical -> Efecto de scroll que se muestre algo */
+  background-attachment: fixed;
+}
+
+.opaco {
+  height: 100%;
+  width: 100%;
+  background-color: #000a;
+}
+
+h2 {
+  text-align: center;
+  padding-top: 20px;
+}

@@ -1,0 +1,30 @@
+/* Colores -> rgb, rgba, hcl, hcla, hexadecimal, hexadecimal alfa (a -> opacidad/transparencia)*/
+
+/* 
+rgb -> (RGB -> Red,Green,Blue) 0 - 255
+rgba -> (El cuarto elemento es la opacidad) -> 255,220,140,0.5
+
+# -> Hexadecimal -> Base 16 -> 00bbddf -> Reducido a 0bdf
+
+06c
+17d
+28e
+39f
+4a
+5b
+
+hsl -> hue, saturation%, lightness% 
+FONDOS -> FONDO CLARO - TEXTO OSCURO / FONTO OSCURO - TEXTO CLARO
+*/
+
+.box {
+  padding: 20px 50px;
+  background: hsl(210, 40%, 85%);
+  margin: 20px;
+  margin-left: 100px;
+  text-align: center;
+  color: hsl(210, 40%, 45%);
+  border-top: 2px solid hsl(210, 40%, 45%);
+  font-family: sans-serif;
+  font-weight: bold;
+}
