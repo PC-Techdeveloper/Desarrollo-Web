@@ -3,7 +3,8 @@
 La clase es el concepto abstracto de un objeto, mientras que el objeto es el elemento final que se basa en la clase.
 
 INSTANCIAR UNA CLASe:
-Se le llama instanciar una clase, crear un objeto o crear una instancia a la acción de crear un nuevo objeto basado en una clase particular. Esta acción se realiza a través de la plabra clave 'new', seguida del nombre de la clase, la cuál puede tener párametrosm en cuyo caso se controlarían desde un 'constructor'.
+Se le llama instanciar una clase, crear un objeto o crear una instancia a la acción de crear un nuevo objeto basado en una clase particular. 
+Esta acción se realiza a través de la plabra clave 'new', seguida del nombre de la clase, la cuál puede tener párametrosm en cuyo caso se controlarían desde un 'constructor'.
 */
 
 // Declaración de una clase
