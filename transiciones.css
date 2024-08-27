@@ -1,0 +1,27 @@
+/* 
+TRANSICIONES: Proporcionan una forma de animar los cambios de las propiedades CSS, em lugar de que los cambios surtan ejecto de manera instantánea. El cambio en un intervalo de tiempo que puedes específicar, siguiendo una curva de aceleración que puedes personalizar.
+*/
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+/* Elemento que se va a transicionar */
+.box {
+  width: 120px;
+  height: 120px;
+  background-color: #f00;
+  margin-top: 50px;
+  transition: left 1s cubic-bezier(.76,.02,.16,.99);
+  /* Propiedades a transicionar */
+  /* transition-property: left; */
+  /* transition-duration: 1s; */
+  /* transition-delay: 2s */
+  /* transition-timing-function: cubic-bezier(.76,.02,.16,.99);  */
+  color: #f00;
+  position: relative;
+  left: 0;
+}
+
+body:hover .box{
+  left: 400px;
+}

@@ -1,0 +1,40 @@
+/*Tablas -> Organizar datos en filas y columnas*/
+/* 
+tr -> Filas (table row).
+td -> Celdas para las filas.
+tr - th -> títulos (table head).
+colspan -> Ocupar espacios en filas vacías.
+thead -> Encabezado de una tabla.
+tbody -> Colocar todos los datos.
+tfoot -> Pie de página de la tabla
+*/
+
+td,
+th {
+  text-align: center;
+  padding: 6px;
+  font-family: sans-serif;
+  border: none;
+  border-bottom: 1px solid #0004;
+  padding-bottom: 9px;
+}
+
+td {
+  color: #444;
+}
+
+table {
+  width: 100%;
+  border-spacing: 12px;
+  max-width: 500px;
+  margin: auto;
+  box-shadow: 0px 0px 25px #0003;
+  margin-top: 30px;
+}
+
+.dato_total,
+.header_total {
+  border: none;
+  padding: 12px;
+  font-size: 1.2em;
+}
