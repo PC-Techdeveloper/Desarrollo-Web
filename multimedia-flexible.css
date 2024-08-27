@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+div,
+body {
+  box-sizing: border-box;
+}
+
+/* Imágen flexible */
+
+/* 
+img {
+  max-width: 100%;
+  height: auto;
+} */
+
+/* Video flexible */
+.container {
+  max-width: 100%;
+  aspect-ratio: 16/9%;
+}
+
+video {
+  width: 100%;
+}

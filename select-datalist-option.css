@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  color: #ddd;
+  background: linear-gradient(to bottom, #222, #000);
+}
+
+form {
+  background-color: transparent;
+  padding: 20px 0;
+  max-width: 500px;
+  margin: auto;
+  box-shadow: 0px 0px 55px #fff2;
+  margin-top: 50px;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+h2 {
+  text-align: center;
+  font-family: sans-serif;
+  margin: 0;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 1.3em;
+  padding: 10px;
+}
+.form_input {
+  padding: 6px 20px;
+}
+
+/* 
+textarea:
+resize -> both(Desplazamiento horizontal y vértical), vertical(Desplazamiento vertical), none (No permitir desplazamiento)
+
+propiedad textarea en html:
+readonly -> Solamente se pueda leer y no se puede modificar.
+disabled -> No se envia el dato y no se puede enfocar.
+maxlength -> Máximo de carácteres permitidos.
+cols/rows -> Cantidad de líneas que puede tener.
+
+label:
+ENLAZAR ELEMENTOS:
+- id y for -> Enlazar el elemento con el mismo nombre en el documento html
+- sin id y for -> Dentro del label colocar el input
+
+*/
+
+/* 
+El select puede recibir -> color y background
+Select -> Seleccionar una opción de entre varias opciones
+Datalist -> Escribir y autocompletado con opciones predeterminadas (input -> list,name - datalist -> id, name)
+
+Option -> Mostrar opciones
+
+fieldset y legend -> Agrupar o etiquetar los elementos de un formulario.
+
+
+
+*/
+input,
+textarea,
+select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 6px 8px;
+  border: none;
+  border: 1px solid #666;
+  box-shadow: 0px 0px 15px #0003;
+  background-color: transparent;
+  border-radius: 4px;
+  color: #ddd;
+  outline: none;
+}
+
+option {
+  background-color: #222;
+}
+
+textarea {
+  min-width: 100%;
+  resize: none;
+  /* Utilizar rows para los textarea para la cantidad de líneas que puede escribir el usuario. */
+  min-height: 102px;
+  font-family: sans-serif;
+}
+
+label {
+  font-size: 0.88em;
+  line-height: 2.1;
+}
+
+.checkbox {
+  width: auto;
+  height: 10px;
+}
+
+fieldset {
+  border-radius: 5px;
+  border: 1px solid #666;
+  padding: 8px 6px 20px 20px;
+  margin: 20px;
+}
+
+legend {
+  padding: 0 6px;
+  color: #777;
+}
+
+a {
+  color: #69f;
+  text-decoration: none;
+}

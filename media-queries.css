@@ -1,0 +1,38 @@
+/* 
+Los media queries adaptan la página web a diferentes resoluciones
+*/
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+div,
+body {
+  box-sizing: border-box;
+}
+
+.flexbox {
+  display: flex;
+}
+
+.flex-item {
+  background-color: #ccc;
+  padding: 30px;
+  border: 1px solid #f00;
+  flex-grow: 1;
+}
+
+/* Media queries para pantallas */
+@media screen and (max-width: 480px) {
+  .flexbox {
+    flex-direction: column;
+  }
+}
+
+/* Media queries para impresión */
+@media print {
+  body {
+    font-size: 200pt;
+  }
+}

@@ -1,0 +1,38 @@
+/* METODOLOGÍA BEM: Bloque, elemento y modificador */
+/*
+Bloque -> Componente de una página que permite reutilizar en otra página web (Barra de navegación, tarjeta, formulario)
+
+Elemento -> Hace referencia a una parte de un bloque (bloque__item)
+
+Modificador -> Forma de modificar un bloque o un elemento (Clase modificadora - item--nombreModificador)
+*/
+
+/* 
+Permiten reutilizar código
+Resuelven problemas de especificidad
+Código más legible
+*/
+
+.lista {
+  border: 2px solid #0007;
+}
+/* CLASE BLOQUE Y ELEMENTO */
+.lista__item {
+  color: #0007;
+  margin: 10px 0;
+  list-style: square;
+}
+/* CLASE MODIFICADORA */
+.item--danino {
+  color: #f00;
+}
+.item--importante {
+  color: #00f;
+}
+.lista--vieja {
+  opacity: 0.5;
+  background-color: #ddd;
+}
+.item--disponible {
+  color: #f50;
+}

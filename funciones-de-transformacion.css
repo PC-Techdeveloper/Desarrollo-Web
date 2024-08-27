@@ -1,0 +1,31 @@
+/* 
+FUNCIONES DE TRANSFORM:
+
+scale -> Modifica el tamaño de un elemento en plano 2D (1 2 - ancho y alto)
+scaleX() -> Modifica el tamaño en el eje horizontañ
+scaleY() -> Modifica el tamañao en el eje vertical
+scale3d -> Define una transformación de elementos en 3D.
+skew(20deg) -> Sesga el elemento en 2D (skewX(20deg) y
+skewY(20deg))
+rotate() -> Rota el elemento en el eje X (rotateX(5deg)) y Y (rotateY(5deg)) 
+translate -> Reposiciona un elemento en dirección horizontal o vertical.
+
+*/
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  height: 100vh;
+  display: flex;
+  background-color: #48e;
+  flex-direction: column;
+}
+
+.box {
+  margin: auto;
+  padding: 20px 50px;
+  width: 100%;
+  border: 4px solid #000;
+  width: fit-content;
+  translate: 140px 40px;
+}

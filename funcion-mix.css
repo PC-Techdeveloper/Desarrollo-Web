@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #f44;
+}
+
+/* 
+clip-path -> inset, circle, ellipse, polygon, path, reat, xywh
+
+Crea una región de recorte que establece que parte de un elemento debe mostrarse, se específica en porcentajes y pixeles.
+*/
+
+img {
+  max-width: 100%;
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+  border: 10px solid #f44;
+}

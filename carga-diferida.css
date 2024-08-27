@@ -1,0 +1,10 @@
+/* 
+Lazy load -> El contenido tiene que ir cargando, mientras que el usuario va haciendo scroll en el documento web. Mejora el rendimiento web para una página más rapida
+*/
+
+p {
+  height: 100vh;
+  width: 100vw;
+  font-size: 30px;
+  overflow: hidden; 
+}  

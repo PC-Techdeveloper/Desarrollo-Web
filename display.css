@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/* Barra de navegación -> Inline-block*/
+/* display: none; */
+.nav {
+  background-color: #48e;
+}
+.nav__list {
+  margin: 0;
+  text-align: center;
+}
+.nav__item {
+  display: inline-block;
+}
+.nav__link {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  background-color: #48e;
+  font-weight: 200;
+}
+
+.nav__link:hover {
+  background-color: #59e;
+}
+
+.link--button {
+  border: 1px solid #fff;
+  background-color: #fff;
+  padding: 4px 18px;
+  color: #48e;
+  border-radius: 3px;
+  margin-left: 60px;
+}
+.link--button:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
+/* 
+div {
+  background-color: #999;
+} */
+
+/* Etiquetas de bloque (display: block;) -> margin y padding (VERTICAL) */
+/* Etiquetas en línea (display: inline;) -> margin y padding (HORIZONTAL)  */
+
+/* p {
+  background-color: #000;
+  color: #fff;
+  display: inline;
+  margin: 5px;
+  padding: 20px;
+  height: 100px;
+  width: 500px;
+} */

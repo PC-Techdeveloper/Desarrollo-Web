@@ -1,0 +1,68 @@
+/* 
+min() -> Establece el valor más pequeño.
+max() -> Establece el valor más alto.
+clamp() -> Rango de valores entre un minímo definido, un valor ideal y un valor máximo
+*/
+/* 
+Variables -> Información que se guarda en memoria.
+sintaxis -> :root {--color: #000}
+*/
+
+/* CREANDO VARIABLES CON ROOT*/
+:root {
+  --color-principal: #48e;
+}
+
+.body {
+margin: 0;
+  font-family: sans-serif;
+  padding: 20px;
+  --tamaño-principal: 2.4rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+/* CAJAS FLEXIBLES */
+/* TAMAÑOS DE LETREAS FLEXIBLES */
+.box {
+  display: grid;
+  place-content: center;
+  color: #fff;
+  margin: 120px auto;
+  font-size: 30px;
+  padding: 0 40px;
+  font-size: clamp(var(--tamaño-principal), 2.2vw, 4rem);
+  border: 6px solid #000;
+}
+
+.box:first-child {
+  background-color: var(--color-principal);
+}
+
+.box:nth-child(2) {
+  color: var(--color-principal);
+  border: 6px solid var(--color-principal);
+}
+
+.box p {
+  --color-principal: #f44;
+  color: var(--color-principal);
+}
+
+h1 {
+  font-size: 2.2em;
+  margin-bottom: 0;
+}
+
+body > p {
+  color: var(--color-principal);
+  font-size: 60px;
+}
+
+/* CREANDO VARIABLE CON @PROPERTY */
+@property --color-principal {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: #48e;
+}

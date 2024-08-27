@@ -1,0 +1,30 @@
+/* FUNCIÓN CALC -> Permite sumar, restar, multiplicar y dividir */
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-principal: #48e;
+  --alto-del-box: 400px;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.box {
+  font-size: 30px;
+  padding: 0 40px;
+  font-size: clamp(2.4rem, 2.2vw, 4rem);
+  border: 6px solid #000;
+}
+
+.box:first-child {
+  height: var(--alto-del-box);
+}
+
+.box:nth-child(2) {
+  height: calc(100vh - var(--alto-del-box));
+  overflow: auto;
+}

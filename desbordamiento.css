@@ -1,0 +1,25 @@
+/* 
+Overflow -> Como se maneja el contenido que sobresale del contenedor
+*/
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #ccc;
+}
+/* Overflow -> Imagenes, videos */
+.box {
+  width: 220px;
+  height: 220px;
+  background-color: #fff;
+  color: #f00;
+  position: relative;
+  left: 0;
+  border: 2px solid #0009;
+  margin: auto;
+  margin-top: 50px;
+  /* overflow-x y overflow-y -> Horizontal y vertical */
+  /* visible, hidden, scroll, auto, clip */
+  overflow: clip;
+  /* display: inline-block; */
+}

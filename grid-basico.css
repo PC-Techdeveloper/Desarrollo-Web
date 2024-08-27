@@ -1,0 +1,115 @@
+/* 
+En CSS GRID permite trabajar con filas y columnas, mientras que en FLEXBOX solo se puede crear un layout de manera horizontal o vertical.
+
+repeat -> Evitar repetir una expresión -> repeact(4,1fr)
+auto-fit -> Auto ajuste
+auto-fill -> Auto relleno
+minmax -> Darle un mínimo y un máximo a una columna -> minmax(300px,700px) -> min-content
+
+grid explicito -> Definimos al navegador interpreta cuales van a hacer las celdas y tamaños de las cuadriculas
+
+grid implicito -> El grid trata a todos los elementos como parte de su cuadrícula, creando nuevas filas.
+
+grid-auto-flow -> dense, column, row -> Como los elementos colocados fluyen automáticamente hacia la cuadrícula.
+
+grid-gap -> Separar elementos del contenedor entre si, ya sean filas o columnas (gap-column, gap-row, gap)
+
+grid-column -> Específica el tamaño y la ubicación del elemento en la cuadrícula en columnas
+
+grid-row -> Específica el tamaño y la ubicación del elemento en la cuadrícula en filas
+
+grid-template-area -> Específica áreas de cuadrículas con nombres estableciendo las celdas en la cuadrícula y asignándoles nombres
+
+grid-template-column o grid-template- row -> Define el nombre de las líneas y las funciones de tamaño de línea de grid-columns y grid-rows.
+
+grid-auto-flow: dense -> Rellena espacios en blanco
+*/
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #eee;
+}
+
+body,
+div {
+  box-sizing: border-box;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(min-content, 1fr));
+  grid-template-rows: auto 1fr auto;
+  grid-auto-flow: dense;
+  margin: auto;
+  gap: 10px;
+  padding: 10px;
+  min-height: 100vh;
+  /*áreas definidas*/
+  grid-template-areas:
+    'header header header'
+    'nav main aside'
+    'footer footer footer';
+}
+
+nav,
+header,
+footer,
+aside,
+main {
+  padding: 20px;
+  border: 2px solid #444;
+}
+
+header {
+  grid-area: header;
+  background-color: #48e;
+  color: #fff;
+  border-color: #48e;
+}
+
+nav {
+  grid-area: nav;
+}
+
+main {
+  grid-area: main;
+  min-width: 300px;
+}
+
+aside {
+  grid-area: aside;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #000;
+  color: #fff;
+}
+
+.grid-item {
+  /* background-color: #48e;
+  font-size: 30px;
+  border-radius: 16px;
+  background-image: url('/img/soydalto.webp');
+  background-size: cover;
+  background-position: center; */
+}
+
+.grid-item:nth-child(10) {
+  grid-area: span 2 / span 3;
+}
+
+/* .grid-item:first-child { */
+/* span -> Donde posicionar */
+/* grid-column: 1 / span 3; */
+/* grid-row: 1 / span 2; */
+/* background-image: url('img/soydalto.webp'); */
+/* background-size: cover; */
+/* background-position: center; */
+/* } */
+
+/* 
+.grid-item:hover {
+  opacity: 0.74;
+} */

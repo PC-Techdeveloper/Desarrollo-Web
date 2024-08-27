@@ -1,0 +1,27 @@
+/* PARA IMÁGENES Y VIDEOS */
+/* 
+Object fit -> Determina como se comporta el contenido de un elemento, cuando se define su alto y su ancho (fill, contain, cover, none, scale-down).
+
+Object position -> top, bottom, center, px, 
+
+*/
+body {
+  margin: 0;
+  background-color: #ddd;
+}
+
+img {
+  width: 500px;
+  height: 300px;;
+  object-fit: scale-down;
+  border: 2px solid #000;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+video {
+  width: 500px;
+  height: 300px;
+  object-fit: scale-down;
+  margin-left: 50px;
+}

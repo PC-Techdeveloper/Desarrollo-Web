@@ -1,0 +1,25 @@
+/* Selector de atributo: Imágenes
+Termina con: src$="..." -> Extensión 
+Comienza con: src^="..." -> Nombre de la imágen
+*/
+img[src$='webp'] {
+  width: 100%;
+}
+
+/* Selector descendiente*/
+ul li {
+  color: #666;
+}
+/* Selector de hijo directo */
+li > em {
+  color: #f00;
+}
+/* Selector de hermano adyacente */
+h1 + p {
+  color: blue;
+}
+/* Selector múltiple */
+/* h1,
+p {
+  color: brown; */
+/* } */

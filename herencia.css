@@ -1,0 +1,27 @@
+/* 
+HERENCIA: Algunas propiedades pueden heredarse (Inherit) y otras no
+CASCADA:
+ESPECIFICIDAD:
+*/
+
+body {
+  color: blue;
+}
+
+div {
+  font-family: sans-serif;
+  color: red;
+}
+/* 
+Inherit -> Hereda
+Initial -> No hereda
+unset -> Resetea
+revert -> Encuentra el estilo del usuario, sino al inherit
+*/
+h1 {
+  color: green;
+}
+h1 {
+  color: unset;
+  font-family: initial;
+}

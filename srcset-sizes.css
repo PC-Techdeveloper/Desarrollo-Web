@@ -1,0 +1,20 @@
+/* 
+ATRIBUTOS HTML -> Cargar imágenes responsive
+SRCSET -> Cargar varias versiones de imagenes para un optimo rendimiento
+SIZES -> Imagenes en responsive en varias resoluciones para diferentes pantallas
+
+*/
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+div,
+body {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}

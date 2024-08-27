@@ -1,0 +1,43 @@
+body,
+div {
+  box-sizing: border-box;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, 50px);
+  gap: 10px;
+  padding: 10px;
+  /* Eje horizontal el hijo dentro de su celda*/
+  justify-items: stretch;
+  /* Eje horizontal para la celda en el contenedor */
+  justify-content: space-evenly;
+  /* Eje vertical */
+  align-items: stretch;
+  align-content: space-evenly;
+  height: 350px;
+  border: 2px solid #000;
+  margin: 20px;
+}
+
+.grid-item:first-child {
+  background-color: #e66;
+}
+/* Alineando en el eje horizontal y vertical */
+/* Alineación de elementos -> Con Flexbox */
+.grid-item {
+  background-color: #48e;
+  color: #fff;
+  font-size: 30px;
+  max-width: 100%;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.grid-item:hover {
+  opacity: 0.74;
+}

@@ -1,0 +1,28 @@
+/* 
+HEADER -> Encabezado (Imágenes, logos, barras de navegación)
+
+NAV-UL-LI-A -> Barra de navegación (Navegar-imágenes)
+
+SECTION -> Hace referencia a una sección del contenido (Contenedores con clases)
+
+MAIN -> Contenido principal (Dentro todas las etiquetas html necesarias)
+
+ASIDE -> Sección secundaria que está relacionado con el contenido principal en la etiqueta main
+
+FOOTER -> Pie de página (Redes sociales, derechos de autor, enlaces a términos y condiciones, ayudas). Se ubica abajo del todo del documento web
+
+H1 -> Un título por página.
+
+ARTICLE -> Contiene información independiente del resto del sitio.
+*/
+
+footer {
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
+  font-size: 14px;
+  background-color: #333;
+  color: #ddd;
+  width: 100%;
+  text-align: center;
+}

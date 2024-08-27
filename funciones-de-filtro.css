@@ -1,0 +1,38 @@
+/* FUNCIONES */
+/* 
+FUNCIONES DE FILTRO:
+
+filter y backdrop-filter: 
+drop-shadow() -> Agrega una sombra al elemento
+blur(px,rem,cm) -> Desenfoque
+brightness(1,1.5) -> Brillo
+opacity(1) -> Transparencia de un elemento
+sepia() -> Apariencia más cálida a amarillo / marrón
+invert() -> Invierte los colores
+contrast(1) -> Diferencia entre las partes 
+grayscale(1, %) -> Convierte la imágen a una escala de grises (saturación)
+saturate(1, %) -> Aumentar la intensidad de los colores
+hue-rotate(50deg) -> Rota el tono de un elemento y su contenido
+backdrop-filter -> Aplica a los elementos que estén por detrás (Desenfoque o cambio de color)
+
+
+*/
+body {
+  margin: 0;
+  font-family: sans-serif;
+  height: 100vh;
+  display: flex;
+  background-color: #48e;
+}
+
+.box {
+  margin: auto;
+  padding: 20px 50px;
+  width: 100%;
+  border: 4px solid #000;
+  width: fit-content;
+}
+
+img {
+  filter: grayscale() drop-shadow(0px 0px 45px #000) invert();
+}

@@ -1,0 +1,14 @@
+/* CASCADA: El orden de las propiedades de los elementos */
+/* ESPECIFICIDAD: 0,0,1 -> Elementos más o menos específicos */
+/* !important: Elemento más importante para estilar en vez de los otros estilos */
+#titutlo {
+  color: green;
+}
+
+.titulo {
+  color: blue !important;
+}
+
+h1 {
+  color: blue !important;
+}

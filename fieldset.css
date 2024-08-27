@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  color: #ddd;
+  background-color: #222;
+}
+
+form {
+  background-color: transparent;
+  padding: 10px 20px;
+  max-width: 500px;
+  margin: auto;
+  box-shadow: 0px 0px 55px #fff2;
+  margin-top: 50px;
+  border-radius: 8px;
+  font-size: 16px;
+  margin: 6px 0;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 6px 8px;
+  border: none;
+  border: 1px solid #666;
+  box-shadow: 0px 0px 15px #0003;
+  background-color: transparent;
+  border-radius: 4px;
+  color: #ddd;
+}
+
+fieldset {
+  margin: 20px 0;
+  border: 1px solid #ddd6;
+  border-radius: 5px;
+}
+
+legend {
+  padding: 0 5px;
+}

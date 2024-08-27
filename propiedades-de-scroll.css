@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/* 
+Propiedades de scroll:
+
+scroll-behavior -> auto, smooth
+scrollbar-color -> color1 y color2
+scrollbar-width -> auto, thin, none
+*/
+
+.box {
+  font-size: 30px;
+  padding: 0 40px;
+  border: 6px solid #000;
+  width: 50vw;
+  height: 100vh;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  scrollbar-color: #6af #fff;
+  scrollbar-width: thin;
+}
+
+.crecer {
+  height: 200vh;
+}

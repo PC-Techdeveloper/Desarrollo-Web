@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  --bg-color: #ff9464;
+  --text-color: #333;
+  --dark-color: #f62;
+}
+
+body,
+div,
+ul,
+li,
+a,
+h1,
+h2,
+h3,
+h4.p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("img/fondo.gif");
+  position: center;
+  height: 200dvh;
+  background-size: cover;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  mix-blend-mode: difference;
+}
+
+.text-container {
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  display: flex;
+  font-size: clamp(1rem, 9vw, 12rem);
+  color: var(--text-color);
+  font-weight: 600;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  padding: 3vw;
+  mix-blend-mode: difference;
+  animation: aparecer-texto both;
+  animation-timeline: scroll();
+  animation-range-start: cover 20%;
+}
+
+.left-text {
+  color: var(--dark-color);
+}
+
+.right-text {
+  font-weight: 900;
+}
+
+.left-text {
+  filter: drop-shadow(0px 0px 1px var(--dark-color))
+    drop-shadow(0px 0px 9px var(--dark-color));
+}
+
+img {
+  filter: grayscale();
+  mix-blend-mode: darken;
+  position: fixed;
+  top: 0;
+  animation: aparecer both;
+  animation-timeline: scroll();
+  max-height: 100vh;
+  mix-blend-mode: darken;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+    filter: grayscale();
+    translate: 0 -20%;
+    scale: 0.7;
+  }
+
+  100% {
+    opacity: 1;
+    filter: grayscale();
+    translate: 0 0;
+    scale: 1;
+  }
+}
+
+@keyframes aparecer-texto {
+  0% {
+    opacity: 0;
+    translate: 0 20%;
+    scale: 2;
+  }
+
+  100% {
+    opacity: 1;
+    translate: 0 0;
+    scale: 1;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .text-container {
+    justify-content: space-evenly;
+  }
+}

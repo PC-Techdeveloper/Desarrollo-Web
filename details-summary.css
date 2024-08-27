@@ -1,0 +1,31 @@
+/*
+Details y Summary -> Crear un contenido desplegable.
+*/
+body {
+  background-color: #333;
+  color: #ddd;
+  font-family: sans-serif;
+}
+
+details {
+  background-color: transparent;
+  border: 1px solid #ddd;
+  padding: 9px;
+  font: 0.7em;
+  color: #aaa;
+}
+/* Seleccionar cuando está abierto */
+/* details[open] { */
+/* border: 1px solid #ddd; */
+/* font-weight: bold; */
+/* } */
+
+summary {
+  background-color: transparent;
+  font-size: 1em;
+  color: #eee;
+}
+
+ul {
+  font-weight: 100;
+}

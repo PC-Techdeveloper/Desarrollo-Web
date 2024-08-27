@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.box {
+  font-size: 30px;
+  padding: 0 40px;
+  border: 2px solid #f00;
+}
+
+/* initial-letter: cuantasLíneas desdeQueLínea */
+
+p::first-letter {
+  initial-letter: 3 2;
+  padding: 2px;
+  padding-bottom: 0;
+  padding-left: 0;
+  color: #f00;
+  font-family: cursive;
+}

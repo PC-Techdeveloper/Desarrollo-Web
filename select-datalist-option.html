@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Select - Datalist - Option</title>
+    <link rel="stylesheet" href="select-datalist-option.css" />
+  </head>
+  <body>
+    <form>
+      <!-- Simple inputs -->
+      <h2>Formulario de contacto</h2>
+      <fieldset>
+        <legend>INFORMACIÓN BÁSICA</legend>
+        <div class="form_input">
+          <label
+            >Nombre completo
+            <input type="text" placeholder="John Doe" />
+          </label>
+        </div>
+        <div class="form_input">
+          <label
+            >Email
+            <input type="email" placeholder="ejemplo@gmail.com" />
+          </label>
+        </div>
+        <div class="form_input">
+          <label
+            >Asunto
+            <input type="text" placeholder="El asunto de tu mensaje" />
+          </label>
+        </div>
+      </fieldset>
+      <!-- Select & Option -->
+      <div class="form_input">
+        <label
+          >Tipo de usuario
+          <select name="type-of-user">
+            <option value="user1">Seguidor/a</option>
+            <option value="user2">Empresa</option>
+            <option value="user3">Otros</option>
+          </select>
+        </label>
+      </div>
+      <!--  Datalist & Option-->
+      <div class="form_input">
+        <label
+          >Referente
+          <input list="referente" name="referente" />
+          <datalist id="referente" name="type-of-user">
+            <option value="Soy Dalto">Un creador de contenido</option>
+            <option value="Una empresa">Una empresa del rubro IT</option>
+            <option value="Un amigo">Me recomendo un amigo</option>
+          </datalist>
+        </label>
+      </div>
+      <!-- Fieldset y legend -->
+
+      <!-- Textarea -->
+      <div class="form_input">
+        <label
+          >Mensaje
+          <textarea rows="8" placeholder="Deja tu mensaje... "></textarea>
+        </label>
+      </div>
+      <!-- Enlaces (AVANZADO) -->
+      <div class="form_input">
+        <label
+          >Acepto los
+          <a href="terms.html" target="_blank">términos y condiciones</a>
+          <input type="checkbox" class="checkbox" />
+        </label>
+      </div>
+    </form>
+  </body>
+</html>

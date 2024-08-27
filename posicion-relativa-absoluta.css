@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  background-color: #ccc;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+/* Posicionamiento Relativo -> Punto original en el mismo lugar -> Funciona si SOLO tiene relative*/
+/* Position: static; (Propiedad por defecto) */
+/* .box {
+  width: 100px;
+  height: 100px;
+  background-color: #f90;
+  color: #fff;
+  position: relative;
+  z-index: 10;
+} */
+/* Valores negativos -> Encima de la otra caja */
+/* Propiedad top y left tiene más prioridad */
+/* z-index -> Mover la caja en el eje Z (El más alto se posiciona por encima o detrás)*/
+
+/* .box--blue {
+  background-color: #00f;
+  top: 70px;
+  left: 20px;
+  z-index: 20;
+} */
+
+/* .box--red {
+  top: 150px;
+  left: 40px;
+  background-color: #f00;
+  z-index: 30;
+} */
+
+/* Posicionamiento Absoluto -> Contexto de apilamiento, y se posicionan más adelante, no ocupa lugar, permite desplazar a diferentes sitios*/
+.container {
+  border: 2px solid #000;
+  margin: 30px 50px;
+  background-color: #fff;
+  /* Punto de referencia para desplazar el elemento */
+  position: relative;
+  height: 200px;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #db7;
+  color: #fff;
+}
+
+.box--blue {
+  background-color: #37d;
+  position: absolute;
+  top: 40px;
+}
+
+.box--red {
+  background-color: #e53;
+}

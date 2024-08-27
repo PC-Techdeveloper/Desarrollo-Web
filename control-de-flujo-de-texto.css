@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #bbb;
+}
+
+/* CONTROL DE FLUJO DE TEXTO */
+/* 
+white-space -> Como se comportan los espacios en blanco 
+nowrap -> Sin saltos de línea
+pre -> Detectar los saltos de línea del código
+pre-wrap -> Permite saltos de línea
+
+text-overflow -> ellipsis
+word-break -> break-all
+word-wrap -> break-word, anywhere
+text-wrap -> balance (Textos), pretty (Parráfos)
+*/
+
+.box {
+  width: 240px;
+  height: 270px;
+  margin: auto;
+  margin-top: 50px;
+  background-color: #fff;
+  border: 1px solid #0006;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-wrap: pretty;
+}
+
+h1 {
+  text-wrap: balance;
+}
