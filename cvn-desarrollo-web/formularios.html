@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios</title>
+  </head>
+  <body>
+    <form action="/manejarFormulario" method="POST">
+      <label for="usuario">Usuario:</label>
+      <input
+        type="text"
+        id="usuario"
+        name="usuario"
+        placeholder="Tu usuario"
+      /><br />
+      <label for="pwd">Contraseña:</label>
+      <input type="password" name="pwd" id="pwd" /><br />
+      <label>Sexo:</label>
+      <label for="hombre">Hombre</label>
+      <input type="radio" name="sexo" id="hombre" value="hombre" />
+      <label for="mujer">Mujer</label>
+      <input type="radio" name="sexo" id="mujer" value="mujer" /><br />
+      <label for="pais">País:</label>
+      <select name="pais" id="pais">
+        <option>Estados Unidos</option>
+        <option>Canadá</option>
+        <option selected>México</option>
+        <option>Otro</option>
+      </select>
+      <br />
+      <label for="terminos">Aceptas los términos</label>
+      <input
+        type="checkbox"
+        name="terminos"
+        id="terminos"
+        value="aceptar"
+      /><br />
+      <input type="submit" value="Enviar datos" />
+    </form>
+  </body>
+</html>

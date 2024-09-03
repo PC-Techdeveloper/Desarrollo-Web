@@ -1,0 +1,18 @@
+/*
+Para cambiar las propuedades de margin y padding, nuestros valores tienen que utilizar una unidad de medición válida.
+
+- Unidades Absolutas:
+
+px -> Unidad más pequeña de medición de una pantalla o imágen digital.
+cm -> Centímetro ❌
+mm -> Milímetro ❌
+in -> Pulgadas ❌
+
+- Unidades Relativas:
+
+em -> Es relativa al tamaño de la fuente del elemento (14px = 28px -> 14 x 2 = 28).
+rem -> Es relativa al tamaño fuente del elemento raíz, o sea el elemento <html>.
+% -> Hacen referencia al contenedor del elemento. Si se usa 50%, será de la mitad del tamaño del contenedor.
+vh -> La altura del viewport (el espacio en donde está el contenido), donde una unidad 1vh equivale a 1% del tamaño del viewport.
+vw -> La anchura del viewport, donde una unidad 1vw equivale a 1% del tamaño del viewport.
+*/

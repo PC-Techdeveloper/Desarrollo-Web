@@ -1,0 +1,90 @@
+/*
+Grid es una propiedad más avanzada, permite estilizar nuestro espacio como una cuadrícula, la cual tiene dos dimensiones, usando filas y columnas. Para implementarlo, se utiliza 'display: grid;' y después de específicar los tamaños de nuestras filas y columnas con las propiedades 'grid-template-rows' y 'grid-template-columns'.
+
+PROPIEDADES:
+
+* grid-template-rows: 100px 1fr
+Dos renglones, uno de 100px y otro de 1fr (fr es una unidad exclusiva de grid)
+
+* grid-template-rows: minmax(100px, 1fr)
+La función minmax() nos da el rango mínimo y máximo de valores que puede tener el renglón. En este caso, el 100px es el mínimo y el 1fr es el máximo
+
+* grid-template-rows: repeat(3, 200px)
+La función repeat() repite los valores, El primer número indica la cantidad de veces a repetir y el segundo el tamaño, por lo que en este caso tendremos 3 renglones de 200px
+
+Además de estas, se pueden aplicar las propiedades align-content y justify-content como en flexbox. Otras propiedades que se pueden aplicar a un contenedor grid son:
+
+* grid-row-gap: Especifica el espacio entre cada renglón.
+
+* grid-column-gap: Especifica el espacio entre cada columna.
+
+* grid-gap: Especifica el espacio entre cada renglón y columna.
+
+Estas propiedades se utilizan en los elementos del contenedor para especificar el espacio del grid que tomarán:
+
+* grid-column-start: Indica la columna en la que comenzará el elemento.
+
+* grid-column-end: Indica la columna en la que terminará el elemento.
+
+* grid-row-start:  Indica el renglón en el que comenzará el elemento.
+
+* grid-row-end: Indica el renglón en el que terminará el elemento.
+
+* grid-area: Se utiliza para los 4 anteriores. También puede utilizarse con 
+
+* grid-template-areas: para especificar áreas del grid a utilizar.
+
+*/
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  color: #333;
+  font-size: 18px;
+
+  display: grid;
+  grid-template-areas:
+    'header header header'
+    'nav section aside'
+    'footer footer footer';
+  grid-template-rows: 80px 1fr 50px;
+  grid-template-columns: 15% 1fr 18%;
+  gap: 5px;
+  height: 100vh;
+  margin: 10px;
+}
+
+header {
+  background-color: #707070;
+  grid-area: header;
+}
+
+nav {
+  background-color: #c9bfbf;
+  grid-area: nav;
+}
+
+section {
+  background-color: #ababab;
+  grid-area: section;
+}
+
+aside {
+  background-color: #c9c9c9;
+  grid-area: aside;
+}
+
+footer {
+  background-color: #707070;
+  grid-area: footer;
+}
+
+header,
+nav,
+section,
+aside,
+footer {
+  padding: 5px;
+  font-weight: bold;
+}

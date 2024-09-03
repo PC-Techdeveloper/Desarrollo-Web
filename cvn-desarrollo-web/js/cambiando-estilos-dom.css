@@ -1,0 +1,30 @@
+.div1 {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+  margin: 0 auto;
+  background-color: lightcyan;
+}
+
+body,
+button {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.25rem;
+  background-color: #222;
+}
+
+.button-cont {
+  width: 200px;
+  margin: 20px auto;
+}
+
+button {
+  width: 200px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  background-color: #ccc;
+}

@@ -1,0 +1,31 @@
+.container-one {
+  font-family: monospace;
+  background-color: #123456;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.container-two {
+  font-family: Tahoma, sans-serif;
+  background-color: lightgreen;
+  margin-left: 100px;
+  max-width: 400px;
+  font-size: 24px;
+}
+
+.container-threee {
+  font-family: sans-serif;
+  background-color: lightblue;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.container-four {
+  font-family: monospace;
+  background-color: lightcoral;
+  margin-left: 100px;
+  width: 400px;
+  font-size: 24px;
+}

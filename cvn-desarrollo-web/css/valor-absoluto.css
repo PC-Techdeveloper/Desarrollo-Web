@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.padre {
+  background-color: #d5f5e3;
+  padding-bottom: 20px;
+}
+
+.hijo {
+  width: 30%;
+  margin: auto;
+  background-color: #f6ddcc;
+  text-align: center;
+}

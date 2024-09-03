@@ -1,0 +1,67 @@
+/*
+Para cualquier elemento podemos modificar su propiedad position, la cual permite seleccionar un método de posicionamiento para el elemento. También permite utilizar otras propiedades como top, bottom, left, right, que cambian la distancia en las diferentes direcciones a otros elementos del mismo nivel jerárquico.
+
+Tipos de métodos:
+
+- static -> Este es el método de posicionamiento predeterminado (de arriba a abajo)
+- relative -> El elemento permanece donde está, pero ahora puede ser afectado con las propiedades top, bottom, left, right.
+- absolute -> Muestra al elemento en una posición absoluta dentro de su elmento padre/contenedor. A diferencia de relative, los elementos alredeor de un elemento absoluto no se reposicionanan alrededor de su posición inicial.
+- fixed -> Permite que el elemento se mantenga visible en la ventana en todo momento (incluso después desplazar la página).
+- sticky -> Se comporta como relative hasta que comienza a "salirse" de la ventana. Ahí es cuando se comporta como fixed, manteniendo su posición en la parte superior de la ventana hasta que su elemento padre deje de estar visible.
+*/
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.relativo {
+  background-color: lightblue;
+  padding: 20px;
+  border: 5px solid blue;
+  position: relative;
+  top: 100px;
+  left: 100px;
+  width: 200px;
+}
+
+.fijado {
+  background-color: lightcoral;
+  padding: 20px;
+  position: fixed;
+  top: 50px;
+  right: 100px;
+  border: 5px solid red;
+  width: 150px;
+}
+
+.sticky {
+  position: sticky;
+  background-color: orange;
+  padding: 20px;
+  border: 5px solid green;
+  width: 100px;
+  margin-top: 200px;
+}
+
+.padre {
+  background-color: lightgreen;
+  padding: 20px;
+  border: 5px solid green;
+  width: 100px;
+  margin-top: 200px;
+}
+
+.hijo {
+  margin-top: 0;
+  position: absolute;
+}
+
+/*
+*  fixed o sticky: Para que un elemento se mantenga siempre visible. (cuadro rojo y naranja).
+
+* relative: Modificar el posicionamiento original de un elemento (cuadros azules).
+
+* absolute: Un elemento se pueda posicionar libremente sin afectar a los elementos alrededor (cuadros verdes).
+*/
+

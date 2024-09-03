@@ -1,0 +1,25 @@
+/*Implementar fuentes
+
+- Podemos colocar fuentes en nuestros proyectos web de diferentes maneras. En la página de Google Fonts podemos seleccionar todos los estilos que queramos y para utilizarlos tenemos 3 opciones:
+
+1. Descargar la fuente: Normalmente se encuentran en formato .ttf o .woff. Después se vincula el archivo con nuestro CSS, utilizando la instrucción @font-face:
+
+@font-face {
+font-family: nombre-de-la-fuente;
+src: url(url-de-la-fuente);
+
+2. Vincular la fuente desde HTML: También podemos utilizar el elemento <link> desde nuestro código HTML, Google Fonts brinda el código para copiarlo al seleccionar las fuentes.
+
+3. Vincular con @import: CSS Cuenta con una instrucción @import. Normalmente, se coloca la etiqueta <style> dentro del <head>. Google Fonts brinda el código para copiarlo al seleccionar las fuentes.
+*/
+
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto-Regular.ttf) format('truetype');
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #222;
+  color: #ddd;
+}

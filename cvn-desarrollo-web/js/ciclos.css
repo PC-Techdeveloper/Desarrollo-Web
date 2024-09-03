@@ -1,0 +1,23 @@
+body,
+button {
+  font-family: Arial, Sans-Serif;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.rect {
+  width: 50%;
+  height: auto;
+  background-color: lightgreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.button-cont {
+  width: 200px;
+  margin: 20px auto;
+}

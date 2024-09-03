@@ -1,0 +1,81 @@
+/*
+Display:
+
+Esta propiedad cambia la forma en que se muestra el contenido. Tiene dos valores por defecto los cuales son 'inline' para objetos en línea (enlaces, spans,labels y 'block' para objetos de bloque (divisiones, párrafos, listas). Existen otros valores como 'inline-block' que combina los dos anteriores. */
+
+/*
+
+Flexbox:
+
+Para utilizarla, se agrega 'display: flex;' a nuestro elemento padre, con esto, TODOS los elementos dentro del elemento se convertirán en cajas flexibles, y se les podrá aplicar una serie de propiedades. Las propiedades son:
+
+- flex-direction (row, row-reverse, column, column-reverse): Cambia la dirección en la que se acomodan los elementos. La propiedad predeterminada es 'row', la cual acomoda a los elementos de manera horizontal de izquierda a derecha.
+
+- flex-wrap (nowrap, wrap, wrap-reverse): Si el contenido no cabe en la dirección que se tiene, entonces se "rodea" con el valor de wrap para que de un salto de línea.
+
+- align-items (flex-start, flex-end, center, baseline): Modifica como se alinean los elementos respecto a los demás verticalmente.
+
+- justify-content (flex-start, flex-end, center, space-between, space-around, space-evenly): Modifica como se alinean los elementos respecto a los demás horizontalmente.
+
+- align-content (flex-start, flex-end, center, space-between, space-around, stretch): Modifica como se alinean los elementos respecto a los demás en el eje vertical.
+
+PROPIEDAEDS DE LOS ELEMENTOS FLEX:
+
+- align-self (auto, flex-start, flex-end, center, baseline, stretch): Alinea sólo al elemento dentro del contenedor. Esta propiedad anulará la propiedad 'align-items' sólo en el elemento.
+
+- flex-grow (): Especifíca el tamaño con el que crecerá un elemento con respecto alos demás. Su valor predetermiado es 0.
+
+- flex-shrink: Especifíca el tamaño con el que reducirá un elemento con respecto a los demás. Su valor predetermiado es 1.
+
+- flex-basis: Especifíca el tamaño inicial de un elemento. Su valor predetermiado es auto.
+
+- flex-flow: Especifíca el comportamiento de los elementos en el contenedor. Su valor predetermiado es 'row nowrap'.
+
+- order: Cambia el orden de los elementos, el valor debe ser un número, el más bajo va primero.
+*/
+
+body {
+  font-family: monospace;
+  background-color: #222;
+  color: #111;
+  font-size: 1.2rem;
+}
+
+div {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 8px;
+}
+
+.uno {
+  background-color: lightblue;
+  width: 50px;
+  height: 50px;
+}
+
+.dos {
+  background-color: lightgreen;
+  width: 50px;
+  height: 50px;
+}
+
+.tres {
+  background-color: lightcoral;
+  width: 50px;
+  height: 50px;
+}
+
+.cuatro {
+  background-color: lightsalmon;
+  width: 50px;
+  height: 50px;
+}
+
+.cinco {
+  background-color: lightseagreen;
+  width: 50px;
+  height: 50px;
+}

@@ -1,0 +1,28 @@
+.seccion1 {
+  color: #000000;
+}
+
+.seccion2 {
+  background: #ffffff;
+}
+
+.seccion3 {
+  border-style: solid;
+  border-color: #888888;
+}
+
+.seccion4 {
+  background-image: linear-gradient(#ffffff, #000000);
+  padding: 20px;
+}
+
+/*
+Formato de colores:
+
+- color
+- background-color
+- border-color
+- box-shadow
+- text-shadow
+- text-decoration-color
+*/

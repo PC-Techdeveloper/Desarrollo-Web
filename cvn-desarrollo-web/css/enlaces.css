@@ -1,0 +1,18 @@
+/*Estilar enlaces es prácticamente igual que estilizar texto. También podemos modificar el estilo del enlace cuando hace clic sobre él o pasa el puntero sobre el texto. Esto se logra a través de pseudo-clases de CSS, que se utilizan para modificar un elemento sólo bajo ciertas condiciones. En los enlaces se utiliza la pseudoclase 'hover' para modificar el texto cuando el usuario pasa el puntero del mouse sobre él.*/
+
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto-Regular.ttf) format('truetype');
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+a {
+  font-size: 30px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+}
